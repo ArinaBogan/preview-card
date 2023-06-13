@@ -133,21 +133,42 @@ header nav p:not(:last-child) {
 .info div h2 {
     font: 800 40px 'Mulish';
     color: #001A49;
-    
+
 }
 
 .info div p {
     font: 400 16px 'Mulish';
     color: #4F596A;
-   
+
 }
-.oval{
+
+.oval {
     background-image: url(./assets/Side\ Shape.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 288px;
     height: 288px;
     position: absolute;
-    left:200px;
+    left: 200px;
     z-index: 0;
+}
+
+.advantages {
+    margin-top: 194px;
+    width: 1120px;
+    height: 969px;
+}
+
+.title h1 {
+    font: 800 46px 'Mulish';
+    text-align: center;
+    color: #001A49;
+}
+
+.title p {
+    font: 400 20px 'Mulish';
+    text-align: center;
+    color: #4F596A;
+    width: 560px;
+    margin-left: 300px;
 }
