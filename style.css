@@ -5,6 +5,7 @@
         url(./fonts/Mulish-ExtraBold.ttf) format('truetype'),
         url(./fonts/Mulish-Regular.ttf) format('truetype');
 }
+
 @font-face {
     font-family: 'Poppins';
     src: url(./fonts/Poppins-Medium.ttf) format('truetype');
@@ -28,6 +29,7 @@ header {
     justify-content: space-between;
     padding: 37px 0;
     align-items: center;
+    width: 1200px;
 }
 
 header nav {
@@ -41,6 +43,7 @@ header nav {
     height: 38px;
     background-repeat: no-repeat;
     background-size: contain;
+    max-width: 90%;
 }
 
 header nav p {
@@ -111,7 +114,7 @@ header nav p:not(:last-child) {
 
 .info {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     height: 172px;
     background: #FFFFFF;
     border: 1px solid #E7EAEB;
@@ -249,11 +252,9 @@ header nav p:not(:last-child) {
     background: linear-gradient(44.11deg, #8FBBE5 15.75%, #3D75BF 84.63%);
     border-radius: 33px;
     width: 206px;
-
     font: 700 16px 'Mulish';
     color: #FFFFFF;
     text-align: center;
-
     padding: 20px 0;
     margin-top: 15px;
     margin-left: 525px;
@@ -292,4 +293,168 @@ footer div {
     font: 500 27px 'Mulish';
     color: #707070;
     margin-bottom: 85px;
+}
+
+@media screen and (max-width:600px) {
+
+    header {
+        width: 600px;
+        max-width: 90%;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    body {
+        width: 600px;
+    }
+
+    .introductory {
+        margin-top: 50px;
+    }
+
+    .introductory .video {
+        display: none;
+    }
+
+    .introductory h1 {
+        font: 400 30px 'Mulish';
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .introductory p {
+        font: 400 15px 'Mulish';
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .introductory .button {
+        width: 170px;
+        margin: auto;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .statistic {
+        margin-top: 70px;
+    }
+
+    .statistic .oval {
+        display: none;
+    }
+
+    .statistic .info {
+        flex-direction: column;
+        align-items: center;
+        background-color: #F5F5F5;
+        border-width: 0;
+
+    }
+
+    .info div:not(:last-child) {
+        border-width: 0;
+    }
+
+    .advantages {
+        width: 600px;
+        margin-top: 100px;
+        height: 500px;
+        
+    }
+    
+
+    .title h1 {
+        font: 400 30px 'Mulish';
+
+    }
+
+    .title p {
+        font: 200 15px 'Mulish';
+        width: 500px;
+        padding-left: 70px;
+    }
+
+    .boxes {
+        margin-left: 10px;
+    }
+
+    .boxes h2 {
+        font: 400 20px 'Mulish';
+        margin-left: 10px;
+
+    }
+
+    .boxes p {
+        font: 200 10px 'Mulish';
+        margin: 10px 10px 20px 10px;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        margin-top: 30px;
+        width: 600px;
+        height: 90px;
+        display: flex;
+        padding-top: 20px;
+
+    }
+
+    .img {
+        display: none;
+    }
+
+    .slash {
+        display: none;
+    }
+
+    .sign p {
+        font: 200 30px 'Mulish';
+        text-align: center;
+        margin-top: 150px;
+    }
+
+    .sign .button {
+
+        width: 100px;
+        font: 500 10px 'Mulish';
+        padding: 10px 0;
+        margin-top: 50px;
+        margin-left: 250px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    .slash-small {
+        background-image: url(./assets/Marico.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 40px;
+        height: 25px;
+    }
+
+
+    .hs {
+        font: 300 25px 'Mulish';
+
+    }
+
+    .site {
+        font: 300 20px 'Poppins';
+
+    }
+
+    .email {
+        font: 300 20px 'Mulish';
+        margin-bottom: 40px;
+    }
+
+
 }
