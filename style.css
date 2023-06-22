@@ -109,12 +109,12 @@ header nav p:not(:last-child) {
 }
 
 .statistic {
-    margin-top: 200px;
+    margin-top: 15px;
 }
 
 .info {
     display: flex;
-    /* width: 100%; */
+    width: 100%; 
     height: 172px;
     background: #FFFFFF;
     border: 1px solid #E7EAEB;
@@ -123,6 +123,7 @@ header nav p:not(:last-child) {
     justify-content: space-around;
     position: relative;
     z-index: 1;
+   
 }
 
 .info div {
@@ -131,6 +132,7 @@ header nav p:not(:last-child) {
     align-items: center;
     justify-content: center;
     width: 400px;
+   
 }
 
 .info div:not(:last-child) {
@@ -155,8 +157,9 @@ header nav p:not(:last-child) {
     background-size: contain;
     width: 288px;
     height: 288px;
-    position: absolute;
-    left: 200px;
+    position: relative;
+    left: -150px;
+    top: 300px;
     z-index: 0;
 }
 
